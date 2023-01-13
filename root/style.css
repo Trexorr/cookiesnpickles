@@ -1,0 +1,118 @@
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+background-color: #282814;
+}
+/* Navigation */
+nav ul { 
+padding-left: 0px;
+list-style: none; 
+display: flex;
+justify-content: space-evenly;
+width: 800px;
+text-align: center;
+padding-bottom: 10px;
+}
+nav li { 
+/* display: table-cell;  */
+position: relative; 
+padding: 15px 0;
+/* display: inline-block; */
+}
+nav a {
+color: black;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 0.5em;
+/* display: inline-block; */
+padding-bottom: 8px;
+padding-left: 10px;
+position: relative;
+}
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c1af;
+    z-index: 50;
+    position: relative;
+}
+nav a:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: black;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+nav a:hover:after { 
+width: 100%; 
+left: 0; 
+}
+/* Logo */
+#logo{
+align-self: center;
+padding-top: 20px;
+}
+#logo img{
+height: 150px;
+justify-content: center;
+
+}
+/* .landing*/
+.landing-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/landingpic.jpeg");
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 800px;
+  }
+.landing-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: x-large;
+}
+/* Services */
+
+.services{
+height: 100px;
+text-align: center;
+color: #c6c2af;
+padding-top: 30px;
+}
+.cardwrapper{
+    display: flex;
+    justify-content: space-evenly
+}
+
+.services .header {
+font-size: larger;
+
+padding-bottom: 25px;
+
+}
+.card{
+    border-radius: 10px;
+    margin: 10px;
+    width: 230px;
+    height: max-content;
+    text-align: center;
+    font-size: large;
+}
+
+
